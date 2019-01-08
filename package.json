@@ -1,33 +1,34 @@
 {
-  "name": "weather-overlay",
-  "version": "1.0.0",
-  "description": "Mapping application that provides weather overlays",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cmenedes/weather-overlay.git"
-  },
-  "keywords": [
-    "openlayers",
-    "map",
-    "weather"
-  ],
-  "author": "Christopher Menedes",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cmenedes/weather-overlay/issues"
-  },
-  "homepage": "https://github.com/cmenedes/weather-overlay#readme",
-  "dependencies": {
-    "nyc-lib": "^1.2.16",
-    "ol": "^5.3.0",
-    "openweather-apis": "^3.3.5",
-    "proj4": "^2.5.0"
-  },
-  "devDependencies": {
-    "jest": "^23.6.0"
-  }
+    "name": "weather-overlay",
+    "version": "1.0.0",
+    "description": "Mapping application that provides weather overlays",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cmenedes/weather-overlay.git"
+    },
+    "keywords": [
+        "openlayers",
+        "map",
+        "weather"
+    ],
+    "author": "Christopher Menedes",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cmenedes/weather-overlay/issues"
+    },
+    "homepage": "https://github.com/cmenedes/weather-overlay#readme",
+    "dependencies": {
+        "nyc-lib": "^1.2.16",
+        "ol": "^5.3.0",
+        "openweather-apis": "^3.3.5",
+        "proj4": "^2.5.0"
+    },
+    "devDependencies": {
+        "jest": "^23.6.0"
+    }
 }
