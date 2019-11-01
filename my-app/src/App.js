@@ -1,24 +1,19 @@
 import React from 'react';
+import Map from './components/Map';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let api_key = process.env.MAPS_API_KEY, map_url = "https://maps.googleapis.com/maps/api/js?" + api_key + "&v=3.exp&libraries=geometry,drawing,places"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Map
+        isMarkerShown
+        googleMapURL={map_url}
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `400px` }} />}
+        mapElement={<div style={{ height: `100%` }} />}
+      />
     </div>
   );
 }
